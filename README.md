@@ -28,7 +28,11 @@ pip install -r requirements.txt
 ```
 
 ## 3. Training the model
-If you haven't done so downlaod the data from the kaggle competition website or using the Kaggle API and place it in the data folder. To train the model with cross validation run the command:
+If you haven't done so download the data from the kaggle competition website or using the Kaggle API and place it in the data folder. Change to the src folder as all the python scripts are there. To generate the necessary data frames for training and inference you need to run the `feature_creation.py` file first. 
+```bash
+python train_crossval.py
+```
+To train the model with cross validation run the command:
 ```bash
 python train_crossval.py
 ```
