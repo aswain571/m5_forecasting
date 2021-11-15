@@ -35,7 +35,6 @@ def create_submission():
     #final output dataframe
     df_test['pred'] = y_pred.tolist()
     df_test.to_csv("../submission/output_with_fc.scv")
-    return ()
 
 
 def rmse(predictions, targets):
